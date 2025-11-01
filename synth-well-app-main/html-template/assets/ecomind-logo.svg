@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left leaf -->
+  <path d="M75 60 C75 60, 60 80, 50 120 C45 140, 50 160, 70 165 C80 167, 88 160, 90 150 C92 140, 90 120, 85 100 C82 85, 78 70, 75 60 Z" fill="#10B981"/>
+  
+  <!-- Right leaf -->
+  <path d="M125 60 C125 60, 140 80, 150 120 C155 140, 150 160, 130 165 C120 167, 112 160, 110 150 C108 140, 110 120, 115 100 C118 85, 122 70, 125 60 Z" fill="#10B981"/>
+  
+  <!-- Left upper leaf -->
+  <path d="M85 45 C85 45, 70 55, 60 75 C55 85, 58 95, 68 98 C75 100, 82 96, 85 88 C88 80, 87 68, 86 58 C85.5 52, 85.2 48, 85 45 Z" fill="#6EE7B7"/>
+  
+  <!-- Right upper leaf -->
+  <path d="M115 45 C115 45, 130 55, 140 75 C145 85, 142 95, 132 98 C125 100, 118 96, 115 88 C112 80, 113 68, 114 58 C114.5 52, 114.8 48, 115 45 Z" fill="#6EE7B7"/>
+  
+  <!-- Center stem -->
+  <path d="M97 45 L97 170 L103 170 L103 45 Z" fill="#F0FDF4"/>
+  
+  <!-- Small dots on upper leaves -->
+  <circle cx="75" cy="65" r="3" fill="white" opacity="0.8"/>
+  <circle cx="125" cy="65" r="3" fill="white" opacity="0.8"/>
+</svg>

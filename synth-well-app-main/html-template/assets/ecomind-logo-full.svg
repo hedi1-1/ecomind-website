@@ -1,0 +1,30 @@
+<!-- EcoMind Logo SVG - High Quality -->
+<svg width="512" height="400" viewBox="0 0 512 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (optional, can be removed for transparency) -->
+  <rect width="512" height="400" fill="#F5F5F0"/>
+  
+  <!-- Main leaves structure -->
+  <!-- Left large leaf -->
+  <path d="M200 280 C200 280, 150 260, 120 210 C100 175, 105 130, 140 110 C165 95, 190 105, 205 130 C220 155, 215 195, 210 230 C207 250, 203 265, 200 280 Z" fill="#10B981" opacity="0.9"/>
+  
+  <!-- Right large leaf -->
+  <path d="M312 280 C312 280, 362 260, 392 210 C412 175, 407 130, 372 110 C347 95, 322 105, 307 130 C292 155, 297 195, 302 230 C305 250, 309 265, 312 280 Z" fill="#34D399" opacity="0.9"/>
+  
+  <!-- Left upper leaf -->
+  <path d="M220 170 C220 170, 180 155, 155 125 C140 105, 145 80, 170 70 C190 62, 210 70, 220 90 C230 110, 228 140, 225 155 C223 162, 221 167, 220 170 Z" fill="#6EE7B7"/>
+  
+  <!-- Right upper leaf -->
+  <path d="M292 170 C292 170, 332 155, 357 125 C372 105, 367 80, 342 70 C322 62, 302 70, 292 90 C282 110, 284 140, 287 155 C289 162, 291 167, 292 170 Z" fill="#6EE7B7"/>
+  
+  <!-- Center stem/trunk -->
+  <rect x="248" y="160" width="16" height="130" fill="#F0FDF4" rx="3"/>
+  
+  <!-- Decorative dots on leaves -->
+  <circle cx="178" cy="138" r="5" fill="white" opacity="0.7"/>
+  <circle cx="334" cy="138" r="5" fill="white" opacity="0.7"/>
+  <circle cx="152" cy="180" r="4" fill="white" opacity="0.6"/>
+  <circle cx="360" cy="180" r="4" fill="white" opacity="0.6"/>
+  
+  <!-- EcoMind Text -->
+  <text x="256" y="355" font-family="Arial, sans-serif" font-size="65" font-weight="bold" text-anchor="middle" fill="#1E3A3A">EcoMind</text>
+</svg>

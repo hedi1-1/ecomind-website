@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMind - Administration</title>
+    <link rel="stylesheet" href="css/back-office.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="assets/ecomind-logo.jpg" alt="EcoMind" class="logo-img">
+                <span>EcoMind Admin</span>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#dashboard" class="nav-item active">
+                <i class="fas fa-chart-line"></i>
+                <span>Tableau de bord</span>
+            </a>
+            <a href="#users" class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>Utilisateurs</span>
+                <span class="badge">1,250</span>
+            </a>
+            <a href="#analytics" class="nav-item">
+                <i class="fas fa-chart-pie"></i>
+                <span>Analyses IA</span>
+            </a>
+            <a href="#recommendations" class="nav-item">
+                <i class="fas fa-lightbulb"></i>
+                <span>Recommandations</span>
+            </a>
+            <a href="#impact" class="nav-item">
+                <i class="fas fa-globe-americas"></i>
+                <span>Impact Écologique</span>
+            </a>
+            <a href="#content" class="nav-item">
+                <i class="fas fa-file-alt"></i>
+                <span>Contenu</span>
+            </a>
+            <a href="#reports" class="nav-item">
+                <i class="fas fa-file-invoice"></i>
+                <span>Rapports</span>
+            </a>
+            <a href="#settings" class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Paramètres</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-info">
+                    <span class="user-name">Admin</span>
+                    <span class="user-role">Administrateur</span>
+                </div>
+            </div>
+            <button class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+            </div>
+            
+            <div class="topbar-right">
+                <button class="icon-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+                <button class="icon-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span class="notification-dot">5</span>
+                </button>
+                <button class="icon-btn">
+                    <i class="fas fa-question-circle"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div>
+                    <h1>Tableau de bord</h1>
+                    <p class="page-subtitle">Vue d'ensemble de la plateforme</p>
+                </div>
+                <div class="page-actions">
+                    <button class="btn-secondary">
+                        <i class="fas fa-download"></i> Exporter
+                    </button>
+                    <button class="btn-primary">
+                        <i class="fas fa-plus"></i> Nouveau rapport
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">Utilisateurs actifs</span>
+                        <h3 class="stat-value">15,234</h3>
+                        <span class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i> +12.5%
+                        </span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">CO₂ économisé</span>
+                        <h3 class="stat-value">2.5M kg</h3>
+                        <span class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i> +8.2%
+                        </span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">Analyses IA</span>
+                        <h3 class="stat-value">45,678</h3>
+                        <span class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i> +15.3%
+                        </span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">Taux satisfaction</span>
+                        <h3 class="stat-value">98.4%</h3>
+                        <span class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i> +2.1%
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3>Évolution des utilisateurs</h3>
+                            <p>Nombre d'inscriptions mensuelles</p>
+                        </div>
+                        <select class="chart-filter">
+                            <option>30 derniers jours</option>
+                            <option>3 derniers mois</option>
+                            <option>12 derniers mois</option>
+                        </select>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="usersChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3>Impact environnemental</h3>
+                            <p>Répartition par catégorie</p>
+                        </div>
+                        <button class="btn-icon">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="impactChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity & Users Table -->
+            <div class="data-grid">
+                <!-- Recent Activity -->
+                <div class="activity-card">
+                    <div class="card-header">
+                        <h3>Activité récente</h3>
+                        <a href="#" class="view-all">Tout voir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon green">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Nouveau utilisateur</strong></p>
+                                <p class="activity-details">Marie Dupont s'est inscrite</p>
+                                <span class="activity-time">Il y a 5 minutes</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon blue">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Analyse IA complétée</strong></p>
+                                <p class="activity-details">250 nouvelles recommandations générées</p>
+                                <span class="activity-time">Il y a 15 minutes</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon orange">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Alerte système</strong></p>
+                                <p class="activity-details">Charge serveur élevée détectée</p>
+                                <span class="activity-time">Il y a 1 heure</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon purple">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Objectif atteint</strong></p>
+                                <p class="activity-details">1000 utilisateurs actifs ce mois</p>
+                                <span class="activity-time">Il y a 2 heures</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon green">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Impact écologique</strong></p>
+                                <p class="activity-details">+500kg CO₂ économisé aujourd'hui</p>
+                                <span class="activity-time">Il y a 3 heures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Users Table -->
+                <div class="table-card">
+                    <div class="card-header">
+                        <h3>Derniers utilisateurs</h3>
+                        <div class="table-actions">
+                            <input type="text" placeholder="Rechercher..." class="table-search">
+                            <button class="btn-icon">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Utilisateur</th>
+                                    <th>Email</th>
+                                    <th>Score IA</th>
+                                    <th>Impact CO₂</th>
+                                    <th>Statut</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="user-cell">
+                                            <div class="user-avatar small">MD</div>
+                                            <span>Marie Dupont</span>
+                                        </div>
+                                    </td>
+                                    <td>marie.d@email.com</td>
+                                    <td>
+                                        <div class="score-badge high">92%</div>
+                                    </td>
+                                    <td>-125 kg</td>
+                                    <td><span class="status-badge active">Actif</span></td>
+                                    <td>
+                                        <button class="btn-icon"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-cell">
+                                            <div class="user-avatar small">PL</div>
+                                            <span>Pierre Leblanc</span>
+                                        </div>
+                                    </td>
+                                    <td>pierre.l@email.com</td>
+                                    <td>
+                                        <div class="score-badge medium">78%</div>
+                                    </td>
+                                    <td>-98 kg</td>
+                                    <td><span class="status-badge active">Actif</span></td>
+                                    <td>
+                                        <button class="btn-icon"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-cell">
+                                            <div class="user-avatar small">SM</div>
+                                            <span>Sophie Martin</span>
+                                        </div>
+                                    </td>
+                                    <td>sophie.m@email.com</td>
+                                    <td>
+                                        <div class="score-badge high">85%</div>
+                                    </td>
+                                    <td>-156 kg</td>
+                                    <td><span class="status-badge inactive">Inactif</span></td>
+                                    <td>
+                                        <button class="btn-icon"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-cell">
+                                            <div class="user-avatar small">JD</div>
+                                            <span>Jean Durand</span>
+                                        </div>
+                                    </td>
+                                    <td>jean.d@email.com</td>
+                                    <td>
+                                        <div class="score-badge low">65%</div>
+                                    </td>
+                                    <td>-72 kg</td>
+                                    <td><span class="status-badge active">Actif</span></td>
+                                    <td>
+                                        <button class="btn-icon"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-cell">
+                                            <div class="user-avatar small">CB</div>
+                                            <span>Claire Bernard</span>
+                                        </div>
+                                    </td>
+                                    <td>claire.b@email.com</td>
+                                    <td>
+                                        <div class="score-badge high">88%</div>
+                                    </td>
+                                    <td>-134 kg</td>
+                                    <td><span class="status-badge active">Actif</span></td>
+                                    <td>
+                                        <button class="btn-icon"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Status -->
+            <div class="system-status">
+                <div class="status-header">
+                    <h3>État du système</h3>
+                    <span class="status-indicator online">En ligne</span>
+                </div>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="status-label">Serveur Web</span>
+                        <div class="status-bar">
+                            <div class="status-progress" style="width: 45%"></div>
+                        </div>
+                        <span class="status-value">45%</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Base de données</span>
+                        <div class="status-bar">
+                            <div class="status-progress" style="width: 62%"></div>
+                        </div>
+                        <span class="status-value">62%</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">IA Processing</span>
+                        <div class="status-bar">
+                            <div class="status-progress" style="width: 78%"></div>
+                        </div>
+                        <span class="status-value">78%</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Stockage</span>
+                        <div class="status-bar">
+                            <div class="status-progress warning" style="width: 85%"></div>
+                        </div>
+                        <span class="status-value">85%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/back-office.js"></script>
+</body>
+</html>
